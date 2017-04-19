@@ -1,66 +1,22 @@
-package com.java.lavanya.classes;
+package com.java.lavanya.classes.testclasses;
 
+import com.java.lavanya.classes.Dog;
 public class TestDog {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-
-		Dog d = new Dog();
-		d.height = 3.1f;
-		d.weight = 30f;
-		d.breed = "Bull dog";
-		d.gender='m';
-		d.age= 5;
-		d.color="brown";
-
-		d.showDog();
-		d.bark();
-		d.wagTail();
-		d.walk();
-
-
-		Dog gs =new Dog();
-		gs.color = "white";
-		gs.height = 2.5f;
-		gs.weight = 24f;
-		gs.breed = "German Shepherd";
-		gs.gender = 'm';
-		gs.age=4;
-
-		gs.showDog();
-		gs.wagTail();
-		gs.bark();
+		Dog d = new Dog("Balto", 3, 5.0);
+		d.showDetails();
+		System.out.println("Dog Details: " + d.showDetails());
+		
+		Dog d1= new Dog("Pooch",4);
+		d1.getDogYears();
+		System.out.println("Dog years: " + d1.getDogYears());
+		d1.showDetails();
+		System.out.println("Dog Details: " + d1.showDetails());
 
 	}
+
 }
-
-
-class Dog {
-
-	float height;
-	float weight;
-	String color;
-	char gender;
-	String breed;
-	int age;
-
-	void bark() {
-		System.out.println(breed+" is barking");
-	}
-	void walk() {
-		System.out.println(breed+" is walking");
-	}
-	void wagTail() {
-		System.out.println(breed+" is wagging the tail");
-	}
-
-	void showDog(){
-		System.out.println("Bread is "+breed);
-		System.out.println("Height is "+height);
-		System.out.println("Weight is "+weight);
-		System.out.println("Color is "+color);
-		System.out.println("Gender is "+gender);
-		System.out.println("Age is "+age);
-	}
-}
-
-
