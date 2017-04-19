@@ -52,8 +52,8 @@ public class Library {
 	{
 		String details = "";
 		details = title;
-		details = details + "\n\borrowed: " + borrowed;
-		details = details + "\n\rented: " + rented;
+		details = details + "\n\tborrowed: " + borrowed;
+		details = details + "\n\trented: " + rented;
 		return details;
 	}
 }
