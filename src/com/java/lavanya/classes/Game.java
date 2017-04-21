@@ -108,6 +108,7 @@ public class Game {
 				score+=10;
 				break;
 			case "X":
+				finalScore+=score;	
 				System.out.println("    !!GAME OVER!! ");
 				System.out.println("!!!!!CONGRATULATIONS!!!!!");
 				System.out.println("  LEVEL:"+level+"    "+"SCORE:"+finalScore);
