@@ -126,6 +126,17 @@ public class Game {
 				System.out.println("YOU HAVE REACHED NEXT LEVEL");
 				score=0;
 			}
+			String decision=sc.next();
+
+				if(decision.equals("YES"))
+					continue;
+				else{
+					System.out.println("    !!GAME OVER!! ");
+					System.out.println("!!!!!CONGRATULATIONS!!!!!");
+					System.out.println("  LEVEL:"+(level)+"    "+"SCORE:"+(finalScore+score));
+
+					return;
+				}
 		}
 		while(input!="X");
 
