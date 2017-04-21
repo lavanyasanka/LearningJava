@@ -79,7 +79,7 @@ public class Game {
 		System.out.println();
 		System.out.println("*****CONTROL KEYS*****");
 		System.out.println("U--->+2 D--->+1 B--->+10");
-		System.out.println("    x----->EXIT");
+		System.out.println("    X----->EXIT");
 		System.out.println("Do you want to START game");
 
 		String startGame=sc.next();
