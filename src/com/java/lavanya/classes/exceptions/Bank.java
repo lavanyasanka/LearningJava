@@ -110,7 +110,14 @@ public class Bank {
 
 public float deposit(){
 	System.out.println("Enter the amount to Deposit");
-	amount = sc.nextFloat();
+	try{
+		amount = sc.nextFloat();
+	   }
+	catch(InputMismatchException ex)
+	  {
+		System.out.println("Something went wrong check please");
+	   }
+	
 	balance += amount;
 	System.out.println("Remaining balance in your account : " + balance);
 	return balance;
